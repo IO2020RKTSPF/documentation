@@ -22,9 +22,82 @@ Aplikacja "Podziel się książką" to strona internetowa na której użytkownic
 |--------------|--------------|
 | SearchPage   | ![index](https://github.com/IO2020RKTSPF/documentation/blob/master/images/index.png)
 | MyBookPage   | ![my-books](https://github.com/IO2020RKTSPF/documentation/blob/master/images/my-books.png)
-| AddBookPage  | ![index](https://github.com/IO2020RKTSPF/documentation/blob/master/images/index.png)
-| MessagesPage | ![my-books](https://github.com/IO2020RKTSPF/documentation/blob/master/images/my-books.png)
-| MessagePage  | ![index](https://github.com/IO2020RKTSPF/documentation/blob/master/images/index.png)
+| AddBookPage  | ![add-book](https://github.com/IO2020RKTSPF/documentation/blob/master/images/add-book.png)
+| MessagesPage | ![messages](https://github.com/IO2020RKTSPF/documentation/blob/master/images/messages.png)
+| MessagePage  | ![message](https://github.com/IO2020RKTSPF/documentation/blob/master/images/message.png)
+| LoginPage  | ![login](https://github.com/IO2020RKTSPF/documentation/blob/master/images/login.png)
+
+## 4. Konfiguracja
+### Przed uruchomieniem
+Upewnij się, że środowisko, w którym będziesz chciał wykonać poniższe instrukcje ma skonfigurowanego Docker i Docker Compose.
+
+```
+$ docker version
+
+Client:
+ Version:           19.03.8
+ API version:       1.40
+ Go version:        go1.12.17
+ Git commit:        afacb8b
+ Built:             Wed Mar 11 01:21:11 2020
+ OS/Arch:           darwin/amd64
+ Context:           default
+ Experimental:      true
+
+Server:
+ Engine:
+  Version:          19.03.8
+  API version:      1.40 (minimum version 1.12)
+  Go version:       go1.12.17
+  Git commit:       afacb8b
+  Built:            Wed Mar 11 01:29:16 2020
+  OS/Arch:          linux/amd64
+  Experimental:     true
+ containerd:
+  Version:          v1.2.13
+  GitCommit:        7ad184331fa3e55e52b890ea95e65ba581ae3429
+ runc:
+  Version:          1.0.0-rc10
+  GitCommit:        dc9208a3303feef5b3839f4323d9beb36df0a9dd
+ docker-init:
+  Version:          0.18.0
+  GitCommit:        fec3683
+```
+### Inicjalizacja
+Sklonuj repozytoria ![api](https://github.com/IO2020RKTSPF/api) oraz ![frontend](https://github.com/IO2020RKTSPF/frontend).
+```
+$ mkdir podziel-sie-ksiazka
+$ cd podziel-sieksiazka
+$ git clone https://github.com/IO2020RKTSPF/api.git
+$ git clone https://github.com/IO2020RKTSPF/frontend.git
+```
+Przejdź do katalogu frontend i skonfiguruj plik .env. W miejcre [ ] wprowadź własne apps.googleusercontent.com.
+```
+$ cd podziel-sie-ksiazka/frontend
+$ cp .env.sample .env
+$ vi .env
+
+REACT_APP_WEBSITE_NAME=Podziel się książką
+REACT_APP_GOOGLE_CLIENT_ID=[TUTAJ WPISZ WłASNE APPS.GOOGLEUSERCONTENT.COM]
+REACT_APP_API_URL=http://localhost:8080/
+```
+Teraz przejdź do katalogu api i również skonfiguruj plik .env. W miejsce [ ] wpisz nazwę bazy danych oraz hasło dostępu.
+```
+$ cd podziel-sie-ksiazka/api
+$ cp .env.sample .env
+$ vi .env
+
+MYSQL_DATABASE=[TUTAJ WPISZ NAZWĘ BAZY DANYCH]
+MYSQL_ROOT_PASSWORD=[TUTAJ WPISZ HASŁO DO UŻYTKOWNIKA ROOT W BAZIE DANYCH]
+```
+### Uruchomienie
+Uruchom środowisko aplikacji. **Ważne aby znajdował się w katalogu api**.
+```
+$ cd podziel-sie-ksiazka/api
+$ docker-compose up
+```
+### Sprawdzenie poprawności działani konfiguracji
+Jeżeli wszystko poszło pomyślnie. To na stronie http://localhost:3000/ powinieneś zobaczyć działającą aplikacjię.
 
 ## 3. Wymagania funkcjonalne
 
