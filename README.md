@@ -17,6 +17,15 @@ Każdy czytający książki wie, że zdobycie interesującej go pozycji nie zaws
 
 Aplikacja "Podziel się książką" to strona internetowa na której użytkownicy dokonują wymian oraz wypożyczeń książek. Wymiana/wypożyczenie może odbywać się za darmo lub za drobną opłatą. Użytkownicy aplikacji mogą tworzyć własne wirtualne biblioteki które każdy może przeglądać. Jeżeli użytkownik zdecyduje się na wypożyczenie książki, jej właściciel zostaje o tym poinformowany i kontaktuje się z zainteresowanym. Użytkownicy wystawiają sobie wzajemnie oceny, co pozwala na zmniejszenie ryzyka utraty książki.
 
+### Frontend
+  Nazwa pliku  | Zrzut ekranu |
+|--------------|--------------|
+| SearchPage   | ![index](https://github.com/IO2020RKTSPF/documentation/blob/master/images/index.png)
+| MyBookPage   | ![my-books](https://github.com/IO2020RKTSPF/documentation/blob/master/images/my-books.png)
+| AddBookPage  | ![index](https://github.com/IO2020RKTSPF/documentation/blob/master/images/index.png)
+| MessagesPage | ![my-books](https://github.com/IO2020RKTSPF/documentation/blob/master/images/my-books.png)
+| MessagePage  | ![index](https://github.com/IO2020RKTSPF/documentation/blob/master/images/index.png)
+
 ## 3. Wymagania funkcjonalne
 
 ### Podstawowe
