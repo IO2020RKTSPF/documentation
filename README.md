@@ -31,6 +31,7 @@ Aplikacja "Podziel się książką" to strona internetowa na której użytkownic
 ### Przed uruchomieniem
 Upewnij się, że środowisko, w którym będziesz chciał wykonać poniższe instrukcje ma skonfigurowanego Docker i Docker Compose.
 
+1. Docker
 ```
 $ docker version
 
@@ -63,6 +64,12 @@ Server:
   Version:          0.18.0
   GitCommit:        fec3683
 ```
+2. Docker Compose
+```
+docker-compose --version
+
+docker-compose version 1.27.4, build 01110ad01
+```
 ### Inicjalizacja
 Sklonuj repozytoria ![api](https://github.com/IO2020RKTSPF/api) oraz ![frontend](https://github.com/IO2020RKTSPF/frontend).
 ```
@@ -91,7 +98,7 @@ MYSQL_DATABASE=[TUTAJ WPISZ NAZWĘ BAZY DANYCH]
 MYSQL_ROOT_PASSWORD=[TUTAJ WPISZ HASŁO DO UŻYTKOWNIKA ROOT W BAZIE DANYCH]
 ```
 ### Uruchomienie
-Uruchom środowisko aplikacji. **Ważne aby znajdował się w katalogu api**.
+Uruchom środowisko aplikacji. **Ważne aby znajdować się w katalogu api**.
 ```
 $ cd podziel-sie-ksiazka/api
 $ docker-compose up
