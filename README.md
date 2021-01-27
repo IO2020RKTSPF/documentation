@@ -9,7 +9,7 @@
 
 1. [Wprowadzenie](#1-wprowadzenie)
 2. [Ogólny opis](#2-ogólny-opis)
-3. [Konfiguracja](#3-wymagania-funkcjonalne)
+3. [Konfiguracja](#3-konfiguracja)
 4. [Wymagania funkcjonalne](#4-wymagania-funkcjonalne)
 5. [Wymagania niefunkcjonalne](#5-wymagania-niefunkcjonalne)
 6. [Model systemu](#6-model-systemu)
