@@ -1,19 +1,25 @@
-# "Podziel się książką"
+<p align="center">
+  <a href="http://podzielsieksiazka.northeurope.cloudapp.azure.com/">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+  <h1 align="center"><a href="http://podzielsieksiazka.northeurope.cloudapp.azure.com/" target="_blank">Podziel się książką</a></h3>
+</p>
 
 ## Spis treści
 
 1. [Wprowadzenie](#1-wprowadzenie)
-2. [Opis ogólny](#2-opis-ogólny)
-3. [Wymagania funkcjonalne](#3-wymagania-funkcjonalne)
-4. [Wymagania niefunkcjonalne](#4-wymagania-niefunkcjonalne)
-5. [Model systemu](#5-model-systemu)
-6. [Autorzy](#6-autorzy)
+2. [Ogólny opis](#2-ogólny-opis)
+3. [Konfiguracja](#3-wymagania-funkcjonalne)
+4. [Wymagania funkcjonalne](#4-wymagania-funkcjonalne)
+5. [Wymagania niefunkcjonalne](#5-wymagania-niefunkcjonalne)
+6. [Model systemu](#6-model-systemu)
+7. [Autorzy](#7-autorzy)
 
 ## 1. Wprowadzenie
 
 Każdy czytający książki wie, że zdobycie interesującej go pozycji nie zawsze jest proste. Strona internetowa "Podziel się książką" umożliwia łatwe dzielenie się swoją kolekcją książek przy użyciu prywatnych wirtualnych bibliotek, w których inni użytkownicy mogą odnaleźć interesujące ich tytuły. Dzięki temu, książki zalegające dotychczas na półce mogą odnaleźć nowych czytelników, po czym zostaną zwrócone do ich właściciela. Łatwa wymiana książkami to prawdziwa gratka dla ich miłośników.
 
-## 2. Opis ogólny
+## 2. Ogólny opis
 
 Aplikacja "Podziel się książką" to strona internetowa na której użytkownicy dokonują wymian oraz wypożyczeń książek. Wymiana/wypożyczenie może odbywać się za darmo lub za drobną opłatą. Użytkownicy aplikacji mogą tworzyć własne wirtualne biblioteki które każdy może przeglądać. Jeżeli użytkownik zdecyduje się na wypożyczenie książki, jej właściciel zostaje o tym poinformowany i kontaktuje się z zainteresowanym. Użytkownicy wystawiają sobie wzajemnie oceny, co pozwala na zmniejszenie ryzyka utraty książki.
 
@@ -27,11 +33,10 @@ Aplikacja "Podziel się książką" to strona internetowa na której użytkownic
 | MessagePage  | ![message](https://github.com/IO2020RKTSPF/documentation/blob/master/images/message.png)
 | LoginPage  | ![login](https://github.com/IO2020RKTSPF/documentation/blob/master/images/login.png)
 
-## 4. Konfiguracja
+## 3. Konfiguracja
 ### Przed uruchomieniem
-Upewnij się, że środowisko, w którym będziesz chciał wykonać poniższe instrukcje ma skonfigurowanego Docker i Docker Compose.
-
-1. Docker
+Upewnij się, że środowisko, w którym będziesz chciał wykonać inicjalizacje aplikacjie ma:
+1. Skonfigurowanego Dockera
 ```
 $ docker version
 
@@ -64,21 +69,21 @@ Server:
   Version:          0.18.0
   GitCommit:        fec3683
 ```
-2. Docker Compose
+2. Skonfigurowanego Docker Compose
 ```
 docker-compose --version
 
 docker-compose version 1.27.4, build 01110ad01
 ```
 ### Inicjalizacja
-Sklonuj repozytoria ![api](https://github.com/IO2020RKTSPF/api) oraz ![frontend](https://github.com/IO2020RKTSPF/frontend).
+1. Sklonuj repozytoria ![api](https://github.com/IO2020RKTSPF/api) oraz ![frontend](https://github.com/IO2020RKTSPF/frontend).
 ```
 $ mkdir podziel-sie-ksiazka
 $ cd podziel-sieksiazka
 $ git clone https://github.com/IO2020RKTSPF/api.git
 $ git clone https://github.com/IO2020RKTSPF/frontend.git
 ```
-Przejdź do katalogu frontend i skonfiguruj plik .env. W miejcre [ ] wprowadź własne apps.googleusercontent.com.
+2. Przejdź do katalogu frontend i skonfiguruj plik .env. W miejcre [ ] wprowadź własne apps.googleusercontent.com.
 ```
 $ cd podziel-sie-ksiazka/frontend
 $ cp .env.sample .env
@@ -88,7 +93,7 @@ REACT_APP_WEBSITE_NAME=Podziel się książką
 REACT_APP_GOOGLE_CLIENT_ID=[TUTAJ WPISZ WłASNE APPS.GOOGLEUSERCONTENT.COM]
 REACT_APP_API_URL=http://localhost:8080/
 ```
-Teraz przejdź do katalogu api i również skonfiguruj plik .env. W miejsce [ ] wpisz nazwę bazy danych oraz hasło dostępu.
+3. Teraz przejdź do katalogu api i również skonfiguruj plik .env. W miejsce [ ] wpisz nazwę bazy danych oraz hasło dostępu.
 ```
 $ cd podziel-sie-ksiazka/api
 $ cp .env.sample .env
@@ -98,7 +103,7 @@ MYSQL_DATABASE=[TUTAJ WPISZ NAZWĘ BAZY DANYCH]
 MYSQL_ROOT_PASSWORD=[TUTAJ WPISZ HASŁO DO UŻYTKOWNIKA ROOT W BAZIE DANYCH]
 ```
 ### Uruchomienie
-Uruchom środowisko aplikacji. **Ważne aby znajdować się w katalogu api**.
+1. Uruchom środowisko aplikacji. **Ważne aby znajdować się w katalogu api**.
 ```
 $ cd podziel-sie-ksiazka/api
 $ docker-compose up
@@ -106,7 +111,7 @@ $ docker-compose up
 ### Sprawdzenie poprawności działani konfiguracji
 Jeżeli wszystko poszło pomyślnie. To na stronie http://localhost:3000/ powinieneś zobaczyć działającą aplikacjię.
 
-## 3. Wymagania funkcjonalne
+## 4. Wymagania funkcjonalne
 
 ### Podstawowe
 
@@ -131,7 +136,7 @@ Jeżeli wszystko poszło pomyślnie. To na stronie http://localhost:3000/ powini
 3. Filtrowanie - Według tagów - Według gatunków - Według średniej oceny użytkownika - Według odległości
    4.Ocena użytkownika po dokonaniu wypożyczenia
 
-## 4. Wymagania niefunkcjonalne
+## 5. Wymagania niefunkcjonalne
 
 1. Bezpieczeństwo logowania
    - Bezpieczństwo logowania osiągamy dzięki logowaniu za pomocą facebook/google
@@ -143,14 +148,14 @@ Jeżeli wszystko poszło pomyślnie. To na stronie http://localhost:3000/ powini
 5. Dodanie nowej oferty wypożyczenia nie powinno zajmować dłużej niż 2 minuty
 6. Zmiana zdjęcia profilowego
 
-## 5. Model systemu
+## 6. Model systemu
 
 ### Front-end
 
 1. Strona internetowa - React.js
 
    - Interfejs graficzny
-   - Rudo-szara kolorystyka
+   - Kolorystyka zgodna z logiem
    - Wysyłanie danych do API
    - Odbieranie danych z API
 
@@ -201,7 +206,7 @@ Jeżeli wszystko poszło pomyślnie. To na stronie http://localhost:3000/ powini
         - BookID
         - RentalTime
 
-## 6. Autorzy
+## 7. Autorzy
 
 - Tomasz Steblik
 - Rafał Kulka
