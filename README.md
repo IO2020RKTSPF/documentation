@@ -39,7 +39,7 @@ Aplikacja "Podziel się książką" to strona internetowa na której użytkownic
 | Przykładowy endpoint służący do logowania się do aplikacji | ![login](https://github.com/IO2020RKTSPF/documentation/blob/master/images/logowanie.PNG)
 | Przykładowa struktura obiektu w bazie danych | ![struktura](https://github.com/IO2020RKTSPF/documentation/blob/master/images/struktura.PNG)
 
-###Pozostałe endpointy oraz obiekty można znaleźć na: http://podzielsieksiazka.northeurope.cloudapp.azure.com:8080/index.html
+### Pozostałe endpointy oraz obiekty można znaleźć na: http://podzielsieksiazka.northeurope.cloudapp.azure.com:8080/index.html
 
 ## 3. Konfiguracja
 ### Przed uruchomieniem
