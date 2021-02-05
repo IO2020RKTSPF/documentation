@@ -21,7 +21,7 @@ Każdy czytający książki wie, że zdobycie interesującej go pozycji nie zaws
 
 ## 2. Ogólny opis
 
-Aplikacja "Podziel się książką" to strona internetowa na której użytkownicy dokonują wymian oraz wypożyczeń książek. Wymiana/wypożyczenie może odbywać się za darmo lub za drobną opłatą. Użytkownicy aplikacji mogą tworzyć własne wirtualne biblioteki które każdy może przeglądać. Jeżeli użytkownik zdecyduje się na wypożyczenie książki, jej właściciel zostaje o tym poinformowany i kontaktuje się z zainteresowanym. Użytkownicy wystawiają sobie wzajemnie oceny, co pozwala na zmniejszenie ryzyka utraty książki.
+Aplikacja "Podziel się książką" to strona internetowa na której użytkownicy dokonują wymian oraz wypożyczeń książek. Wymiana/wypożyczenie może odbywać się za darmo lub za drobną opłatą. Użytkownicy aplikacji mogą tworzyć własne wirtualne biblioteki. Jeżeli użytkownik zdecyduje się na wypożyczenie książki, jej właściciel zostaje o tym poinformowany i kontaktuje się z zainteresowanym.
 
 ### Frontend
   Nazwa pliku  | Zrzut ekranu |
@@ -37,6 +37,9 @@ Aplikacja "Podziel się książką" to strona internetowa na której użytkownic
    Opis        | Zrzut ekranu |
 |--------------|--------------|
 | Przykładowy endpoint służący do logowania się do aplikacji | ![login](https://github.com/IO2020RKTSPF/documentation/blob/master/images/logowanie.PNG)
+| Przykładowa struktura obiektu w bazie danych | ![struktura](https://github.com/IO2020RKTSPF/documentation/blob/master/images/struktura.PNG)
+
+####Pozostałe endpointy oraz obiekty można znaleźć na: http://podzielsieksiazka.northeurope.cloudapp.azure.com:8080/index.html
 
 ## 3. Konfiguracja
 ### Przed uruchomieniem
