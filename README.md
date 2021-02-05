@@ -33,6 +33,11 @@ Aplikacja "Podziel się książką" to strona internetowa na której użytkownic
 | MessagePage  | ![message](https://github.com/IO2020RKTSPF/documentation/blob/master/images/message.png)
 | LoginPage  | ![login](https://github.com/IO2020RKTSPF/documentation/blob/master/images/login.png)
 
+### API
+   Opis        | Zrzut ekranu |
+|--------------|--------------|
+| Przykładowy endpoint służący do logowania się do aplikacji | ![login](https://github.com/IO2020RKTSPF/documentation/blob/master/images/login.PNG)
+
 ## 3. Konfiguracja
 ### Przed uruchomieniem
 Upewnij się, że środowisko, w którym będziesz chciał wykonać inicjalizacje aplikacjie ma:
@@ -125,28 +130,19 @@ Jeżeli wszystko poszło pomyślnie. To na stronie http://localhost:3000/ powini
 5. Wysyłanie propozycji wymiany do właściciela
 6. Przeglądanie biblioteki innego użytkownika
    -Każdy użytkownik ma możliwość przeglądania książek w bibliotece innego użytkownika
-7. Chat między użytkownikami w celu uzgodnienia szczegółów wypożyczenia
-8. Usuwanie książki w wirtualnej biblioteki
-   -Użytkownik ma możliwość w dowolnym momencie usunąć wcześniej dodaną książkę bez podawania przyczyny
 
 ### Poboczne
 
-1. Dodawanie pozycji do swojej listy życzeń
-2. Przeglądanie książek odpowiadających tym, które są w liście życzeń
-3. Filtrowanie - Według tagów - Według gatunków - Według średniej oceny użytkownika - Według odległości
-   4.Ocena użytkownika po dokonaniu wypożyczenia
+1. Chat między użytkownikami w celu uzgodnienia szczegółów wypożyczenia
 
 ## 5. Wymagania niefunkcjonalne
 
 1. Bezpieczeństwo logowania
    - Bezpieczństwo logowania osiągamy dzięki logowaniu za pomocą facebook/google
-2. Dostosowanie strony do użytkowania przez osoby niepełnosprawne
-   - Zmiana kontrastu
-   - Zmiana rozmiaru czcionki
-3. Opcja zmiany języka między polskim i angielskim
-4. Wysłanie prośby o wypożyczenie nie powinno zajmować dłużej niż 1 minutę
-5. Dodanie nowej oferty wypożyczenia nie powinno zajmować dłużej niż 2 minuty
-6. Zmiana zdjęcia profilowego
+2. Opcja zmiany języka między polskim i angielskim
+3. Wysłanie prośby o wypożyczenie nie powinno zajmować dłużej niż 1 minutę
+4. Dodanie nowej oferty wypożyczenia nie powinno zajmować dłużej niż 2 minuty
+
 
 ## 6. Model systemu
 
@@ -176,6 +172,8 @@ Jeżeli wszystko poszło pomyślnie. To na stronie http://localhost:3000/ powini
    - Przetwarza dane wysłane ze strony
    - Testowanie oraz generowanie dokumentacji przy użyciu **_swaggera_**
    - Autentykacja przy użyciu **_facebook/oauth_**
+   - Do autoryzacji wykorzystany token jwt
+   - Baza danych oraz API napisane z podejściem **CODE FIRST**
 
 2. Docker
 
