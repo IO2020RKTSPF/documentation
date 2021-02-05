@@ -36,7 +36,7 @@ Aplikacja "Podziel się książką" to strona internetowa na której użytkownic
 ### API
    Opis        | Zrzut ekranu |
 |--------------|--------------|
-| Przykładowy endpoint służący do logowania się do aplikacji | ![login](https://github.com/IO2020RKTSPF/documentation/blob/master/images/login.PNG)
+| Przykładowy endpoint służący do logowania się do aplikacji | ![login](https://github.com/IO2020RKTSPF/documentation/blob/master/images/logowanie.PNG)
 
 ## 3. Konfiguracja
 ### Przed uruchomieniem
@@ -128,8 +128,6 @@ Jeżeli wszystko poszło pomyślnie. To na stronie http://localhost:3000/ powini
    - Wypożyczenie książki sprawia że książka ta znika z biblioteki
 4. Przeszukiwanie całego zbioru książek dostępnych do wypożyczenia
 5. Wysyłanie propozycji wymiany do właściciela
-6. Przeglądanie biblioteki innego użytkownika
-   -Każdy użytkownik ma możliwość przeglądania książek w bibliotece innego użytkownika
 
 ### Poboczne
 
