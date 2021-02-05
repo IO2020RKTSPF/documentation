@@ -37,16 +37,16 @@ Aplikacja "Podziel się książką" to strona internetowa na której użytkownic
 
 Nazwa pliku  | Zrzut ekranu |
 |--------------|--------------|
-| AllBooks     | ![all-books-mobile](https://github.com/IO2020RKTSPF/documentation/blob/master/images/all-books-mobile.jpg)
-| SearchPage   | ![search-mobile](https://github.com/IO2020RKTSPF/documentation/blob/master/images/search-mobile.jpg)
-| Drawer       | ![drawer-mobile](https://github.com/IO2020RKTSPF/documentation/blob/master/images/drawer-mobile.jpg)
-| MyBookPage   | ![your-books-mobile](https://github.com/IO2020RKTSPF/documentation/blob/master/images/your-books-mobile.jpg)
-| AddBookPage  | ![offer-create-mobile](https://github.com/IO2020RKTSPF/documentation/blob/master/images/offer-create-mobile.jpg)
-| OfferEdit    | ![offer-edit-mobile](https://github.com/IO2020RKTSPF/documentation/blob/master/images/offer-edit-mobile.jpg)
-| BookDesc     | ![offer-description-mobile](https://github.com/IO2020RKTSPF/documentation/blob/master/images/offer-description-mobile.jpg)
-| Transactions | ![transactions-mobile](https://github.com/IO2020RKTSPF/documentation/blob/master/images/transactions-mobile.jpg)
-| MessagePage  | ![transaction-messaging-mobile](https://github.com/IO2020RKTSPF/documentation/blob/master/images/transaction-messaging-mobile.jpg)
-| LoginPage  | ![login-mobile](https://github.com/IO2020RKTSPF/documentation/blob/master/images/login-mobile.jpg)
+| AllBooks     | <img src="https://github.com/IO2020RKTSPF/documentation/blob/master/images/all-books-mobile.jpg" width="400" height="800">
+| SearchPage   | <img src="https://github.com/IO2020RKTSPF/documentation/blob/master/images/search-mobile.jpg" width="400" height="800">
+| Drawer       | <img src="https://github.com/IO2020RKTSPF/documentation/blob/master/images/drawer-mobile.jpg" width="400" height="800">
+| MyBookPage   | <img src="https://github.com/IO2020RKTSPF/documentation/blob/master/images/your-books-mobile.jpg" width="400" height="800">
+| AddBookPage  | <img src="https://github.com/IO2020RKTSPF/documentation/blob/master/images/offer-create-mobile.jpg" width="400" height="800">
+| OfferEdit    | <img src="https://github.com/IO2020RKTSPF/documentation/blob/master/images/offer-edit-mobile.jpg" width="400" height="800">
+| BookDesc     | <img src="https://github.com/IO2020RKTSPF/documentation/blob/master/images/offer-description-mobile.jpg" width="400" height="800">
+| Transactions | <img src="https://github.com/IO2020RKTSPF/documentation/blob/master/images/transactions-mobile.jpg" width="400" height="800">
+| MessagePage  | <img src="https://github.com/IO2020RKTSPF/documentation/blob/master/images/transaction-messaging-mobile.jpg" width="400" height="800">
+| LoginPage  | <img src="https://github.com/IO2020RKTSPF/documentation/blob/master/images/login-mobile.jpg" width="400" height="800">
 
 ### API
    Opis        | Zrzut ekranu |
