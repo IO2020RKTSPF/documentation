@@ -33,6 +33,21 @@ Aplikacja "Podziel się książką" to strona internetowa na której użytkownic
 | MessagePage  | ![message](https://github.com/IO2020RKTSPF/documentation/blob/master/images/message.png)
 | LoginPage  | ![login](https://github.com/IO2020RKTSPF/documentation/blob/master/images/login.png)
 
+### Aplikacja mobilna
+
+Nazwa pliku  | Zrzut ekranu |
+|--------------|--------------|
+| AllBooks     | ![all-books-mobile](https://github.com/IO2020RKTSPF/documentation/blob/master/images/all-books-mobile.jpg)
+| SearchPage   | ![search-mobile](https://github.com/IO2020RKTSPF/documentation/blob/master/images/search-mobile.jpg)
+| Drawer       | ![drawer-mobile](https://github.com/IO2020RKTSPF/documentation/blob/master/images/drawer-mobile.jpg)
+| MyBookPage   | ![your-books-mobile](https://github.com/IO2020RKTSPF/documentation/blob/master/images/your-books-mobile.jpg)
+| AddBookPage  | ![offer-create-mobile](https://github.com/IO2020RKTSPF/documentation/blob/master/images/offer-create-mobile.jpg)
+| OfferEdit    | ![offer-edit-mobile](https://github.com/IO2020RKTSPF/documentation/blob/master/images/offer-edit-mobile.jpg)
+| BookDesc     | ![offer-description-mobile](https://github.com/IO2020RKTSPF/documentation/blob/master/images/offer-description-mobile.jpg)
+| Transactions | ![transactions-mobile](https://github.com/IO2020RKTSPF/documentation/blob/master/images/transactions-mobile.jpg)
+| MessagePage  | ![transaction-messaging-mobile](https://github.com/IO2020RKTSPF/documentation/blob/master/images/transaction-messaging-mobile.jpg)
+| LoginPage  | ![login-mobile](https://github.com/IO2020RKTSPF/documentation/blob/master/images/login-mobile.jpg)
+
 ### API
    Opis        | Zrzut ekranu |
 |--------------|--------------|
@@ -119,6 +134,14 @@ $ docker-compose up
 ### Sprawdzenie poprawności działani konfiguracji
 Jeżeli wszystko poszło pomyślnie. To na stronie http://localhost:3000/ powinieneś zobaczyć działającą aplikacjię.
 
+### Inicjalizacja aplikacji mobilnej
+
+1. Aplikacja do działania wymaga Firebase i Scaledrone. Należy utworzyć odpowiednie konta w tych usługach.
+
+2. Należy utworzyć google-services.json z Firebase i umieścić w katalogu app w plikach źródłowych aplikacji mobilnej. Jest to konieczne dla funkcjonowania logowania google. Dodatkowo należy utworzyć nową aplikację w konsoli Firebase, włączyć logowanie google, oraz dodać w niej klucz sha-1 z android sdk którym została zbudowana.
+
+3. Następnie należy utworzyć kanał na Scaledrone i umieścić jego id w kodzie aplikacji co pozwoli na obsługę wiadomości między użytkownikami. 
+
 ## 4. Wymagania funkcjonalne
 
 ### Podstawowe
@@ -158,12 +181,14 @@ Jeżeli wszystko poszło pomyślnie. To na stronie http://localhost:3000/ powini
 
 2. Aplikacja mobilna na system Androd
 
-   - UI w frameworku flutter
-   - Napisana w jęzuku Kotlin
+   - Napisana w jęzuku Java
    - Firebase
      - Obsługa logowania
      - Obsługa powiadomień
+   - Retrofit
      - Komunikacja z API
+   - Scaledrone
+     - Obsługa chatu między użytkownikami
 
 ### Back-end
 
