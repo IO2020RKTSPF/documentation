@@ -5,6 +5,11 @@
   <h1 align="center"><a href="http://podzielsieksiazka.northeurope.cloudapp.azure.com/" target="_blank">Podziel się książką</a></h3>
 </p>
 
+Powiązane repozytoria:
+- [Frontend](https://github.com/IO2020RKTSPF/frontend)
+- [API](https://github.com/IO2020RKTSPF/aplikacja-mobilna)
+- [Aplikacja mobilna](https://github.com/IO2020RKTSPF/api)
+
 ## Spis treści
 
 1. [Wprowadzenie](#1-wprowadzenie)
